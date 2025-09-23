@@ -1,0 +1,23 @@
+
+### AppControllerGetHello
+
+@baseUrl = http://localhost:3000
+# @name AppControllerGetHello
+
+GET {{baseUrl}}/teste/hello/
+
+### AppControllerGetHello2
+# @name AppControllerGetHello2
+
+GET {{baseUrl}}/novo/
+
+### ConceitosManualontroller
+# @name ConceitosManualontroller
+
+GET {{baseUrl}}/conceitos-manual/batata
+
+
+### ConceitosAutoController
+# @name ConceitosAutoController
+
+GET {{baseUrl}}/conceitos-auto/
