@@ -21,3 +21,24 @@ GET {{baseUrl}}/conceitos-manual/batata
 # @name ConceitosAutoController
 
 GET {{baseUrl}}/conceitos-auto/
+
+### RecadosControllerFindAll
+# @name RecadosControllerFindAll
+
+GET {{baseUrl}}/recados/
+
+### RecadosControllerFindOne
+# @name RecadosControllerFindOne
+
+GET {{baseUrl}}/recados/testeID
+
+### RecadosControllerFindOne
+# @name RecadosControllerFindOne
+
+POST  {{baseUrl}}/recados/
+Content-Type: application/json
+
+{
+    "titulo": "Recado de teste",
+    "descricao": "Descrição do recado de teste"
+}
