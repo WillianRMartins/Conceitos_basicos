@@ -2,35 +2,17 @@
 ### AppControllerGetHello
 
 @baseUrl = http://localhost:3000
-# @name AppControllerGetHello
 
-GET {{baseUrl}}/teste/hello/
-
-### AppControllerGetHello2
-# @name AppControllerGetHello2
-
-GET {{baseUrl}}/novo/
-
-### ConceitosManualontroller
-# @name ConceitosManualontroller
-
-GET {{baseUrl}}/conceitos-manual/batata
-
-
-### ConceitosAutoController
-# @name ConceitosAutoController
-
-GET {{baseUrl}}/conceitos-auto/
 
 ### RecadosControllerFindAll
 # @name RecadosControllerFindAll
 
-GET {{baseUrl}}/recados/
+GET {{baseUrl}}/recados/?limit=100&page=20
 
 ### RecadosControllerFindOne
 # @name RecadosControllerFindOne
 
-GET {{baseUrl}}/recados/testeID
+GET {{baseUrl}}/recados/2
 
 ### RecadosControllerFindOne
 # @name RecadosControllerFindOne
@@ -39,6 +21,22 @@ POST  {{baseUrl}}/recados/
 Content-Type: application/json
 
 {
-    "titulo": "Recado de teste",
+    "id": "Recado de teste",
     "descricao": "Descrição do recado de teste"
+}
+### RecadosControllerFindOne2
+# @name RecadosControllerFindOne2
+
+PATCH  {{baseUrl}}/recados/1/
+Content-Type: application/json
+
+{
+    "descricao": "Descrição do recado de teste PATCH"
+}
+###
+DELETE  {{baseUrl}}/recados/1/
+Content-Type: application/json
+
+{
+    "descricao": "Descrição do recado de teste DELETE"
 }
